@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <p>
+          <strong>Name:</strong>
+          <%= @product.name %>
+        </p>
+      </div>
+      <div class="panel-body">
+        <p>
+          <strong>Description:</strong>
+          <%= @product.description %>
+        </p>
+
+        <p>
+          <strong>Quantity:</strong>
+          <%= @product.quantity %>
+        </p>
+
+        <p>
+          <strong>Price:</strong>
+          <%= @product.price %>
+        </p>
+
+        <p>
+          <strong>Category:</strong>
+          <%= @product.category.name %>
+        </p>
+
+        <p>
+          <strong>Brand:</strong>
+          <%= @product.brand %>
+        </p>
+      </div>
+      <div class="panel-footer">
+        <%= link_to 'Edit', edit_product_path(@product), class: "btn btn-warning" %> |
+        <%= link_to 'Back', products_path, class: "btn btn-primary" %>
+      </div>
+    </div>
+  </div>
+</div>
